@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #BBD2C5 0%, #536976 100%);
+    color: #333;
+    line-height: 1.7;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Typography */
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+    color: #2c3e50;
+}
+
+h2 {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+/* A modern, subtle underline effect for titles */
+h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 50px;
+    height: 3px;
+    background-color: #3498db;
+    border-radius: 2px;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #fff;
+    margin-bottom: 40px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+}
+
+.profile-img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid #f0f2f5;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+/* Subtle hover effect for the profile image */
+.profile-img:hover {
+    transform: scale(1.05);
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    color: #7f8c8d;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+/* Modern Card Design with Animation */
+.card {
+    background: white;
+    padding: 35px;
+    border-radius: 16px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    /* This is the magic line for smooth animation */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* The "floating" animation on hover */
+.card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+/* Education List Styles */
+.education-list {
+    list-style: none;
+}
+
+.education-list li {
+    margin-bottom: 20px;
+    border-left: 4px solid #3498db;
+    padding-left: 20px;
+    background: #fafafa;
+    padding: 15px 20px;
+    border-radius: 0 8px 8px 0;
+}
+
+.education-list strong {
+    display: block;
+    font-size: 1.1rem;
+    color: #2c3e50;
+}
+
+.education-list span {
+    display: block;
+    color: #7f8c8d;
+    font-size: 0.95rem;
+    margin-top: 5px;
+}
+
+/* Hobbies Flex Grid */
+.hobbies-grid {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.hobby-item {
+    background: #eef6fc;
+    color: #2980b9;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.hobby-item:hover {
+    background-color: #3498db;
+    color: white;
+    cursor: default;
+}
+
+/* Footer & Quote */
+footer {
+    text-align: center;
+    padding: 60px 20px;
+    background: #2c3e50;
+    color: #bdc3c7;
+    margin-top: 60px;
+}
+
+.quote-box {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    font-style: italic;
+    color: #ffffff;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.quote-box cite {
+    display: block;
+    font-size: 1rem;
+    margin-top: 15px;
+    color: #3498db;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.copyright {
+    font-size: 0.85rem;
+    opacity: 0.7;
+}
